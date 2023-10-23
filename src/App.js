@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ComponentButton from './components/Esercizio';
+import MyButton from './components/Esercizio';
+import ImageComponent from './components/EsercizioDue';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
       </header>
-    </div>
+      <div>
+       <ComponentButton Bottone="salva" />
+      <MyButton Bottone="modifica" />
+      <ImageComponent Src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" Alt="img"/>
+</div>
+<div>
+      <ComponentButton Bottone="salva" />
+      <MyButton Bottone="modifica" />
+      <ImageComponent Src="https://images.pexels.com/photos/1045113/pexels-photo-1045113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" Alt="imgTwo"/>
+</div>
+          </div>
   );
 }
 
